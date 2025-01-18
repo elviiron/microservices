@@ -20,25 +20,24 @@ li {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: calc(50% - 20px); /* Две колонки с учетом отступов */
+    width: calc(50% - 20px); 
     box-sizing: border-box;
 }
 
 img {
-    max-width: 100%; /* Ограничиваем ширину изображения */
-    height: auto; /* Высота будет автоматически подстраиваться */
+    max-width: 100%; 
+    height: auto;
 }
 
 form {
     margin-top: 10px;
 }
 
-/* Новый стиль для названия товара */
 .product-name {
-    font-size: 1em; /* Увеличиваем размер шрифта */
-    font-weight: 600; /* Делаем текст чуть толще */
-    background: none; /* Убираем фон */
-    border: none; /* Убираем границы */
-    color: black; /* Цвет текста */
-    cursor: pointer; /* Курсор при наведении */
+    font-size: 1em;
+    font-weight: 600; 
+    background: none; 
+    border: none; 
+    color: black;
+    cursor: pointer; 
 }

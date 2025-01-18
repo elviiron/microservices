@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Две колонки с учетом отступов */
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: auto; /* Высота будет автоматически подстраиваться */
+}
+
+form {
+    margin-top: 10px;
+}
+
+/* Новый стиль для названия товара */
+.product-name {
+    font-size: 1em; /* Увеличиваем размер шрифта */
+    font-weight: 600; /* Делаем текст чуть толще */
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+    cursor: pointer; /* Курсор при наведении */
+}

@@ -1,0 +1,21 @@
+version: '3.8-slim'
+
+services:
+
+  main_service:
+    build:
+      context: ./main_service
+      dockerfile: Dockerfile 
+    ports:
+      - "5000:5000" 
+    depends_on:
+      - notification_service
+
+  notification_service:
+    build:
+      context: ./notification_service
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5000" 
+      
+      

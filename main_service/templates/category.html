@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Товары</title>
+</head>
+<body>
+<h1>INSPIRE SHOP</h1>
+<ul>
+    {% for product in products %}
+        <li>
+            <form action="{{ url_for('category', category_name=category_name) }}" method="POST" style="display:inline;">
+                <input type="hidden" name="product_id" value="{{ product[0] }}">
+                <a href="#" onclick="this.closest('form').submit(); return false;">{{ product[2] }}</a>
+            </form>
+            <p>Цена: {{ product[3] }}</p>
+            <img src="{{ product[4] }}" alt="{{ product[1] }}">
+        </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('basket') }}">Перейти в корзину</a>
+<a href="{{ url_for('index') }}">Вернуться к покупкам</a>
+</body>
+</html>
